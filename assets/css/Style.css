@@ -1,0 +1,373 @@
+.grid-container {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: .5fr .5fr 1fr 2fr 1.5fr 1.5fr .5fr;
+    grid-gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+    background-color: rgb(104, 151, 151);
+    grid-template-areas: 
+    "grid-two grid-two grid-two"
+    "grid-three grid-three grid-three" 
+    "grid-four grid-five grid-five" 
+    "grid-six grid-seven grid-seven" 
+    "grid-six grid-eight grid-nine" 
+    "grid-six grid-ten grid-eleven" 
+    "grid-twelve grid-thirteen grid-thirteen"  
+}
+/*   ++++++++ main page grid layout is above this comment! :)  */
+
+/*Two*/
+  .grid-two {
+    background: rgba(11, 30, 53, 0.74);
+    grid-area: grid-two;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+      .Brandon {
+        width: 20rem;
+        height: 5rem;
+        padding: 1rem 5rem 1rem 1rem;
+      }
+
+      header button {
+        font-family: sans-serif;
+        font-weight: 800;
+        color: azure;
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        list-style: none;
+        text-decoration: none;
+      }
+
+      .nav-links li {
+        display: inline-block;
+        padding: 5px 20px;
+      }
+
+      .nav-links li a {
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+        color: azure;
+        font-family: sans-serif;
+        font-weight: 800;
+        color: azure;
+        font-size: 2rem;
+      }
+
+      .nav-links li a:hover {
+        color: #cf7bb6;
+      }
+
+     .grid-two button {
+       padding: 9px 25px;
+       background-color: #88244e;
+       border: none;
+       border-radius: 70px;
+       cursor: pointer;
+       transition: all 0.3s ease 0s;
+     }
+
+     .grid-two button:hover {
+       background-color: rgb(140, 0, 255);
+     }
+
+/*Three*/
+  .grid-three{
+    background: url(../images/hero.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-three;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    align-items: center;
+  }
+
+/*Four*/
+  .grid-four{
+    grid-area: grid-four;
+    background: rgba(11, 30, 53, 0.74);
+    border-right: solid 15px #0e074e;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+/*Five*/
+  .grid-five{
+    grid-area: grid-five;
+    background: rgba(11, 30, 53, 0.74);
+    align-self: center;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+/*Six*/
+  .grid-six{
+    background: rgba(11, 30, 53, 0.74);
+    grid-area: grid-six;
+    border-right: solid 15px #0e074e;
+    align-items: center;
+    padding: 2rem;
+  }
+/*Seven*/
+  .grid-seven {
+    background: url(../images/PlaceholderImage1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-seven;
+    border: solid 10px #246c88;
+    opacity: 0.8;
+  }
+/*Eight*/
+  .grid-eight{
+    background: url(../images/RunBuddyProject.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-eight;
+    border: solid 10px #246c88;
+  }
+/*Nine*/
+  .grid-nine{
+    background: url(../images/PlaceholderImage2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-nine;
+    border: solid 10px #246c88;
+  }
+/*Ten*/
+  .grid-ten{
+    background: url(../images/PlaceholderImage3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-ten;
+    border: solid 10px #246c88;
+  }
+/*eleven*/
+  .grid-eleven{
+    background: url(../images/PlaceholderImage4.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: grid-eleven;
+    border: solid 10px #246c88;
+  }
+
+  /*hover animations start*/
+  .grid-seven:hover {
+    border: solid 10px rgb(0, 255, 255);
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px rgb(214, 255, 252);
+    transform: scale(1.05);
+    transition:  transform 0.45s;
+  }
+
+  .grid-eight:hover {
+    border: solid 10px rgb(0, 255, 255);
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px rgb(214, 255, 252);
+    transform: scale(1.05);
+    transition:  transform 0.45s;
+  }
+
+  .grid-nine:hover {
+    border: solid 10px rgb(0, 255, 255);
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px rgb(214, 255, 252);
+    transform: scale(1.05);
+    transition:  transform 0.45s;
+  }
+
+  .grid-ten:hover {
+    border: solid 10px rgb(0, 255, 255);
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px rgb(214, 255, 252);
+    transform: scale(1.05);
+    transition:  transform 0.45s;
+  }
+
+  .grid-eleven:hover {
+    border: solid 10px rgb(0, 255, 255);
+    opacity: 1.0;
+    box-shadow: 5px 5px 5px rgb(214, 255, 252);
+    transform: scale(1.05);
+    transition:  transform 0.45s;
+  }
+
+  /*hover animations end*/
+/*Twelve*/
+  .grid-twelve{
+    background: rgba(11, 30, 53, 0.74);
+    grid-area: grid-twelve;
+    border-right: solid 15px #0e074e;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+/*Thirteen*/
+  .grid-thirteen{
+    background: rgba(11, 30, 53, 0.74);
+    grid-area: grid-thirteen;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+      footer button {
+        font-family: sans-serif;
+        font-weight: 800;
+        color: azure;
+        font-size: 2rem;
+      }
+
+      .grid-thirteen li a {
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+        color: azure;
+        font-family: sans-serif;
+        font-weight: 800;
+        color: azure;
+        font-size: 2rem;
+      }
+
+      .nav-links li a:hover {
+        color: #cf7bb6;
+      }
+
+    .grid-thirteen button {
+      padding: 9px 25px;
+      background-color: #88244e;
+      border: none;
+      border-radius: 70px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    .grid-thirteen button:hover {
+      background-color: rgb(140, 0, 255);
+    }
+
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    height: 250vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: .2fr 1fr .2fr 1fr .2fr 1fr 1fr 1fr 1fr 1fr .2fr;
+    grid-template-areas: 
+    "grid-two grid-two grid-two" 
+    "grid-three grid-three grid-three"
+    "grid-four grid-four grid-four"
+    "grid-five grid-five grid-five"
+    "grid-six grid-six grid-six"
+    "grid-seven grid-seven grid-seven"
+    "grid-eight grid-eight grid-eight"
+    "grid-nine grid-nine grid-nine"
+    "grid-ten grid-ten grid-ten"
+    "grid-eleven grid-eleven grid-eleven"
+    "grid-thirteen grid-thirteen grid-thirteen"
+  }
+
+  .grid-twelve {
+    display: none;
+  }
+
+  .grid-one {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .grid-container {
+    display: grid;
+    height: 300vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr .5fr .1fr 2fr .1fr 1fr 1fr 1fr 1fr 1fr .2fr;
+    grid-template-areas: 
+    "grid-two grid-two grid-two" 
+    "grid-three grid-three grid-three"
+    "grid-four grid-four grid-four"
+    "grid-five grid-five grid-five"
+    "grid-six grid-six grid-six"
+    "grid-seven grid-seven grid-seven"
+    "grid-eight grid-eight grid-eight"
+    "grid-nine grid-nine grid-nine"
+    "grid-ten grid-ten grid-ten"
+    "grid-eleven grid-eleven grid-eleven"
+    "grid-thirteen grid-thirteen grid-thirteen"
+  }
+
+  .grid-twelve {
+    display: none;
+  }
+
+  .grid-one {
+    display: none;
+  }
+
+  .Brandon {
+    width: 10rem;
+    height: 6rem;
+  }
+
+  header button {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: azure;
+    font-size: 1rem;
+  }
+
+  .nav-links li {
+    padding: 0px 0px;
+  }
+
+  .grid-three{
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .grid-four{
+    background: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+  }
+
+  .grid-six{
+    background: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 0 0 180px;
+  }
+
+  footer button {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: azure;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    padding: 10px 10px;
+  }
+
+  .grid-thirteen button {
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+  }
+
+
+
+}
+    
